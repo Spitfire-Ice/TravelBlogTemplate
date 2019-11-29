@@ -9,7 +9,27 @@
 </head>
 <body>
   <header>
-    <nav></nav>
+    <nav class="nav" id="nav">
+      <div class="nav-wrapper">
+        <div class="logo">
+          <a href="#">
+            <h1>LO<br>GO</h1>
+          </a>
+        </div>
+        <div class="menu__mobile-button" id="mobileButton" onclick="menuToggleAction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul class="menu" id="navigation" onclick="menuToggleAction(this)">
+          <li class="menu--item"><a data-scroll href="#">Retrospective</a></li>
+          <li class="menu--item"><a data-scroll href="#">Follow Us</a></li>
+          <li class="menu--item"><a data-scroll href="#">Blog</a></li>
+          <li class="menu--item"><a data-scroll href="#">Future</a></li>
+          <li class="menu--item"><a data-scroll href="#">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="header--content">
       <div class="header--content-article">
         <h2>We make <span>history</span> not story.</h2>
