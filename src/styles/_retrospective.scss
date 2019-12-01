@@ -2,4 +2,85 @@
  width: 100%;
  min-height: 100vh;
  background-color: aliceblue;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.retrospective--items {
+ width: 90%;
+ min-height: 90vh;
+ //background-color: blue;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+.retrospective--item {
+ min-height: 90vh;
+ width: 25%;
+ border: 2px solid white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ p {
+  width: 20px;
+  word-wrap: break-word;
+  font-family: monospace;
+  font-size: 32px;
+  font-weight: bold;
+  color: rgba(255,255,255,0.9);
+ }
+ //writing-mode: tb-rl;
+}
+.retrospective--item:hover {
+ cursor: pointer;
+}
+.retrospective--item:hover p{
+ opacity: 0.3;
+ transition: 0.5s;
+}
+.retrospective--item:nth-child(1) {
+ transition: 0.5s;
+ background: url("../img/france-tower-1156146_640.jpg") no-repeat center;
+ background-size: cover;
+ opacity: 0.7;
+}
+.retrospective--item:nth-child(2) {
+ background: url("../img/argentina-line-51633_640.jpg") no-repeat center;
+ background-size: cover;
+ opacity: 0.7;
+ transition: 0.5s;
+}
+.retrospective--item:nth-child(3) {
+ background: url("../img/japan-2014618_640.jpg") no-repeat center;
+ background-size: cover;
+ opacity: 0.7;
+ transition: 0.5s;
+}
+.retrospective--item:nth-child(4) {
+ background: url("../img/austria-wheel-443794_640.jpg") no-repeat center;
+ background-size: cover;
+ opacity: 0.7;
+ transition: 0.5s;
+}
+
+
+.retrospective--item:nth-child(1):hover {
+ width: 170%;
+ transition: 0.5s;
+ opacity: 1;
+}
+.retrospective--item:nth-child(2):hover {
+ width: 170%;
+ transition: 0.5s;
+ opacity: 1;
+}
+.retrospective--item:nth-child(3):hover {
+ width: 170%;
+ transition: 0.5s;
+ opacity: 1;
+}
+.retrospective--item:nth-child(4):hover {
+ width: 170%;
+ transition: 0.5s;
+ opacity: 1;
 }
