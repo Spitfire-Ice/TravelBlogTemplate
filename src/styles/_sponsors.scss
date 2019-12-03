@@ -1,0 +1,23 @@
+.sponsors {
+ width: 100%;
+ min-height: 250px;
+ padding-top: 30px;
+}
+.sponsors--items {
+ max-width: 1800px;
+ width: 100%;
+ margin: 0 auto 30px auto;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+.sponsors--item {
+ width: 200px;
+ height: 200px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transform: scale(0.5);
+}
+
