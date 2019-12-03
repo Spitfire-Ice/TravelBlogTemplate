@@ -1,0 +1,155 @@
+.blog {
+ width: 100%;
+ min-height: 957px;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.blog-bg {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ background-image: url("../img/maps-1854199_1280.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ z-index: -1;
+}
+.blog--items {
+ margin-top: 150px;
+ margin-bottom: 100px;
+ max-width: 1200px;
+ width: 100%;
+ min-height: 705px;
+ //display: grid;
+ //grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+ display: flex;
+ //flex-direction: row;
+ justify-content: center;
+ //align-items: center;
+ flex-wrap: wrap;
+}
+.blog--item {
+ width: 345px;
+ height: 600px;
+ margin: 50px 20px;
+ position: relative;
+ border-radius: 15px;
+ overflow: hidden;
+ transition: 0.3s;
+ cursor: pointer;
+ //align-self: center;
+ //justify-self: center;
+}
+.blog--item:hover {
+ transition: 1s;
+ transform: scale(1.07);
+}
+.blog--item-img {
+ width: 100%;
+ height: 45%;
+ background-size: cover;
+ overflow: hidden;
+}
+
+.blog--item-description {
+ background-color: #FFFFFF;
+ height: 43%;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ .blog-date {
+  font-family: $roboto;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 40px;
+ }
+ h3 {
+  font-family: $roboto;
+  font-size: 32px;
+  margin-top: 10px;
+ }
+ p {
+  width: 300px;
+  text-align: center;
+  font-family: $montserrat;
+  font-size: 16px;
+  color: rgba(0,0,0,0.6);
+  margin-top: 30px;
+  line-height: 21px;
+ }
+}
+.blog--item-posts {
+ width: 100%;
+ height: 12%;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ color: #FFFFFF;
+ .blog-reads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right: 1px solid white ;
+
+ }
+ .blog-views {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+ .blog-comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid white;
+ }
+ p {
+  font-size: 21px;
+  line-height: 14px;
+  span {
+   font-size: 16px;
+   line-height: 10px;
+  }
+ }
+}
+.blog--item:nth-child(1) {
+ .blog--item-img {
+  background: url("../img/japan-2014618_640.jpg") no-repeat center;
+ }
+ .blog-date {
+  color: #F48442;
+ }
+ .blog--item-posts {
+  background-color: #F48442;
+ }
+}
+.blog--item:nth-child(2) {
+ .blog--item-img {
+  background: url("../img/france-tower-1156146_640.jpg") no-repeat center;
+ }
+ .blog-date {
+  color: #FF080E;
+ }
+ .blog--item-posts {
+  background-color: #FF080E;
+ }
+}
+.blog--item:nth-child(3) {
+ .blog--item-img {
+  background: url("../img/austria-wheel-443794_640.jpg") no-repeat center;
+ }
+ .blog-date {
+  color: #76DAFC;
+ }
+ .blog--item-posts {
+  background-color: #76DAFC;
+ }
+}
+
+

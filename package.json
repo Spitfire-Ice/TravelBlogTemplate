@@ -53,6 +53,7 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "countup.js": "^2.0.4",
     "rimraf": "^3.0.0"
   }
 }

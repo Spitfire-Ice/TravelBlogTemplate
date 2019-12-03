@@ -1,21 +1,23 @@
 .retrospective {
  width: 100%;
- min-height: 100vh;
+ height: 1212px;
  background-color: aliceblue;
  display: flex;
  justify-content: center;
  align-items: center;
+ position: relative;
 }
 .retrospective--items {
- width: 90%;
- min-height: 90vh;
+ margin-top: 30px;
+ width: 80%;
+ height: 75%;
  //background-color: blue;
  display: flex;
  flex-direction: row;
  justify-content: center;
 }
 .retrospective--item {
- min-height: 90vh;
+ height: 100%;
  width: 25%;
  border: 2px solid white;
  display: flex;
@@ -43,6 +45,7 @@
  background: url("../img/france-tower-1156146_640.jpg") no-repeat center;
  background-size: cover;
  opacity: 0.7;
+
 }
 .retrospective--item:nth-child(2) {
  background: url("../img/argentina-line-51633_640.jpg") no-repeat center;

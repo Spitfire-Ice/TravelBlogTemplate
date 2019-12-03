@@ -1,0 +1,57 @@
+.counter {
+ width: 100%;
+ min-height: 550px;
+ background: rgba(118,218,252,0.3);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ z-index: 2;
+}
+.counter-bg {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ background-image: url("../img/journey-2406354_1280.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ z-index: -1;
+}
+.counter--items {
+ //border: 1px solid blue;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: wrap;
+ z-index: 2;
+ margin: 100px 0;
+}
+.counter--item {
+ border: 2px solid wheat;
+ width: 190px;
+ height: 120px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 15px;
+ background-color: rgba(0,0,0,0.3);
+
+ .counter-numbers {
+  font-family: $roboto;
+  font-size: 38px;
+  color: #F48442;
+ }
+ p {
+  margin-top: 15px;
+  font-family: $roboto;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(255,255,255,1);
+ }
+}
+
+

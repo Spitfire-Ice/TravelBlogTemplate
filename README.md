@@ -5,6 +5,7 @@
 - Retrospective;
 - Follow Us;
 - Blog;
-
+- Future;
+- Contacts;
 
 
