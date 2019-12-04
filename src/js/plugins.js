@@ -22,4 +22,4 @@ window.onscroll = function () {
   }
 };
 
-
+const scroll = new SmoothScroll('a[href*="#"]');

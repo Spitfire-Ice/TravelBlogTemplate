@@ -5,10 +5,11 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is template for travel Blog">
   <title>Document</title>
 </head>
 <body id="body">
-  <header>
+  <header id="header">
     <div class="header-bg">
     </div>
     <nav class="nav" id="nav">
@@ -24,11 +25,11 @@
           <div class="bar3"></div>
         </div>
         <ul class="menu" id="navigation" onclick="menuToggleAction(this)">
-          <li class="menu--item"><a data-scroll href="#">Retrospective</a></li>
-          <li class="menu--item"><a data-scroll href="#">Follow Us</a></li>
-          <li class="menu--item"><a data-scroll href="#">Blog</a></li>
-          <li class="menu--item"><a data-scroll href="#">Future</a></li>
-          <li class="menu--item"><a data-scroll href="#">Contacts</a></li>
+          <li class="menu--item"><a data-scroll href="#retrospective">Retrospective</a></li>
+          <li class="menu--item"><a data-scroll href="#followUs">Follow Us</a></li>
+          <li class="menu--item"><a data-scroll href="#blog">Blog</a></li>
+          <li class="menu--item"><a data-scroll href="#futures">Future</a></li>
+          <li class="menu--item"><a data-scroll href="#contacts">Contacts</a></li>
         </ul>
       </div>
     </nav>
@@ -86,7 +87,7 @@
       </div>
     </div>
   </section>
-  <section class="followUs">
+  <section class="followUs" id="followUs">
     <div class="section--header">Follow us</div>
     <div class="followUs--content">
       <div class="followUs--content-article">
@@ -233,7 +234,7 @@
       </div>
     </div>
   </section>
-  <section class="futures">
+  <section class="futures" id="futures">
     <div class="section--header">Futures</div>
     <div class="futures--tours">
       <h3>2020</h3>
@@ -254,12 +255,65 @@
     <div class="contacts-bg"></div>
     <div class="contacts--items">
       <div class="contacts--item">
-        <form action="">
-
+        <h4>your suggestions</h4>
+        <form action="#">
+          <label for="name">Name</label>
+          <input id="name" type="text" value="" placeholder="Traveler">
+          <label for="email">Email</label>
+          <input id="email" type="text" value="" placeholder="Traveler@mail.com">
+          <label for="location">Your location</label>
+          <input id="location" type="text" value="" placeholder="Travelland, republic Travelia">
+          <label for="message">Your message</label>
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+          <input class="contacts--button" type="submit" value="Submit">
         </form>
       </div>
-      <div class="contacts--item"></div>
+      <div class="contacts--item">
+        <h4>Our locations</h4>
+        <div class="address">
+          <h4>France</h4>
+          <p>445 Mount Eden Road, Mount Eden, Auckland</p>
+          <p><a href="">27.221876, -2.560105</a></p>
+        </div>
+        <div class="address">
+          <h4>Austria</h4>
+          <p>445 Mount Eden Road, Mount Eden, Heromena</p>
+          <p><a href="">49.893421, -1.758437</a></p>
+        </div>
+        <div class="address">
+          <h4>Argentina</h4>
+          <p>445 Mount Eden Road, Mount Eden, Auckland</p>
+          <p><a href="">27.221876, -2.560105</a></p>
+        </div>
+      </div>
     </div>
   </section>
+  <footer>
+    <div class="scroll-down">
+      <a href="#header" data-scroll ><img src="./img/scroll-down_54414.png" alt="scroll" width="47" height="92"></a>
+    </div>
+    <div class="socialNet">
+      <div class="socialNet--iconWrapper">
+        <img src="./img/socialNetwork/1.png" alt="icon" width="15" height="16">
+      </div>
+      <div class="socialNet--iconWrapper">
+        <img src="./img/socialNetwork/2.png" alt="icon" width="8" height="16">
+      </div>
+      <div class="socialNet--iconWrapper">
+        <img src="./img/socialNetwork/3.png" alt="icon" width="15" height="13">
+      </div>
+      <div class="socialNet--iconWrapper">
+        <img src="./img/socialNetwork/4.png" alt="icon" width="12" height="13">
+      </div>
+      <div class="socialNet--iconWrapper">
+        <img src="./img/socialNetwork/5.png" alt="icon" width="12" height="16">
+      </div>
+      <div class="socialNet--iconWrapper">
+        <img src="./img/socialNetwork/6.png" alt="icon" width="15" height="14">
+      </div>
+    </div>
+    <h3>© 2019 <a href="https://github.com/Spitfire-Ice">Vladyslav Ice</a> All Rights Reserved</h3>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 </body>
 </html>
